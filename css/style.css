@@ -1,0 +1,94 @@
+/* Estilos para o container principal */
+.container {
+    position: relative;
+    max-width: 600px;
+    margin-left: 100px; /* Margem à esquerda de 100 pixels */
+}
+/* Estilos para outro container */
+.container01 {
+    position: relative;
+    padding: 10%; /* Preenchimento de 10% do tamanho do contêiner */
+    max-width: 400px; /* Largura máxima de 400 pixels para este contêiner */
+}
+/* Estilos para os slides */
+.slide {
+    position: absolute; /* Posição absoluta para sobrepor os slides */
+    top: 50%; /* Alinha o topo dos slides ao centro vertical */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    opacity: 0.3; /* Opacidade inicial reduzida para slides à esquerda e à direita */
+    transition: opacity 0.5s ease; /* Transição suave de opacidade */
+}
+/* Estilos para o slide atualmente ativo */
+.slide.current {
+    opacity: 1; /* Opacidade completa para o slide central ativo */
+    z-index: 1; /* Coloca o slide ativo acima dos outros */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    left: 50%; /* Alinha a borda esquerda do slide ao centro horizontal */
+}
+/* Estilos para slides anteriores e seguintes */
+.slide.next {
+    left: 50%; /* Alinha a borda esquerda ao centro horizontal */
+    max-width: 50px; /* Largura máxima de 50 pixels para slides anteriores e seguintes */
+}
+.slide.prev, .slide.next {
+    left: 50%; /* Alinha a borda esquerda ao centro horizontal */
+    max-width: 50px; /* Largura máxima de 50 pixels para slides anteriores e seguintes */
+}
+/* Estilos para as imagens dentro dos slides */
+.slide img {
+    width: 100%; /* Imagens ocupam toda a largura do slide */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+/* Estilos para outro slide */
+.slide02 {
+    display: none; /* Oculta o elemento */
+}
+/* Estilos para imagens dentro de outro slide */
+.slide02 img {
+    display: flex; /* Define o contêiner para flexível */
+    justify-content: center; /* Centraliza horizontalmente dentro do contêiner flexível */
+    width: 100%; /* Imagens ocupam toda a largura do contêiner */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+/* Estilos para botões de navegação (anterior e próximo) */
+.prev, .next {
+    position: absolute; /* Posição absoluta para os botões */
+    top: 50%; /* Alinha o topo dos botões ao centro vertical */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    padding: 10px; /* Preenchimento interno de 10 pixels */
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    border: 1px solid black; /*  borda */
+    z-index: 2; /* Coloca os botões acima dos slides */
+}
+/* Estilos para o botão 'anterior' */
+.prev {
+    left: 10px; /* Distância de 10 pixels à esquerda do contêiner pai */
+}
+/* Estilos para o botão 'próximo' */
+.next {
+    right: 10px; /* Distância de 10 pixels à direita do contêiner pai */
+}
+/* Estilos para outra navegação */
+.anterior, .próximo {
+    position: absolute; /* Posição absoluta para os botões */
+    top: 50%; /* Alinha o topo dos botões ao centro vertical */
+    transform: translateY(-10%); /* Ajusta a posição verticalmente */
+    padding: 10px; /* Preenchimento interno de 10 pixels */
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    font-size: 18px; /* Tamanho da fonte de 18 pixels */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    border: 1px solid black; /*  borda */
+    
+}
+/* Estilos para o botão 'anterior' */
+.anterior {
+    left: 10px; /* Distância de 10 pixels à esquerda do contêiner pai */
+}
+/* Estilos para o botão 'próximo' */
+.próximo {
+    right: 10px; /* Distância de 10 pixels à direita do contêiner pai */
+}
+
